@@ -46,8 +46,15 @@ namespace ShootingDice
 
             Console.WriteLine("-------------------");
 
+            Player human = new HumanPlayer();
+                    human.Name = "Mr. Roboto";
+
+            human.Play(smack);
+
+            Console.WriteLine("-------------------");
+
             List<Player> players = new List<Player>() {
-                player1, player2, player3, large, smack, high
+                player1, player2, player3, large, smack, high, human
             };
 
             PlayMany(players);
