@@ -42,7 +42,7 @@ namespace ShootingDice
             Player high = new OneHigherPlayer();
                     high.Name = "The One Upper";
 
-            high.Play(smack);
+            high.Play(large);
 
             Console.WriteLine("-------------------");
 
@@ -53,8 +53,26 @@ namespace ShootingDice
 
             Console.WriteLine("-------------------");
 
+            Player smart = new CreativeSmackTalkingPlayer();
+                    smart.Name = "Scummy Neutron";
+
+            smart.Play(human);
+
+            Console.WriteLine("-------------------");
+
+
+            Player upper = new UpperHalfPlayer();
+                    upper.Name = "Mount Highnigh";
+
+            upper.Play(smart);
+
+            Console.WriteLine("-------------------");
+
+
+
+
             List<Player> players = new List<Player>() {
-                player1, player2, player3, large, smack, high, human
+                player1, player2, player3, large, smack, high, human, smart, upper
             };
 
             PlayMany(players);

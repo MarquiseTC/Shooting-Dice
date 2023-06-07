@@ -14,10 +14,10 @@ namespace ShootingDice
     {
            
           
-            
+            int myRoll = other.Roll() + 1;
             int otherRoll = other.Roll();
-            Console.WriteLine($"{Name} rolls a {otherRoll + 1}");
             Console.WriteLine($"{other.Name} rolls a {otherRoll}");
+            Console.WriteLine($"{Name} rolls a {myRoll}");
             Console.WriteLine($"{Name} Wins!");
                 
                      
